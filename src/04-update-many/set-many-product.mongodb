@@ -1,0 +1,40 @@
+
+// con esta instruccion a los producto 
+//con la categoria juguetes inverta un atributo 
+// llamado inventary en su valor true
+
+db.products.updateMany(
+    // query
+    { category: "Medicamento" },
+    // update - operators
+    {
+      $set: {
+        inventary: true
+      }
+    }
+ );
+
+ //Actividad 1 :  Realizar la 
+ //inserción de un nuevo atributo a productos de (2) una categoría de productos registrados anteriormente en la base datos.
+
+ db.products.updateMany(
+    // query
+    { category: "Moda" },
+    // update - operators
+    {
+      $set: {
+        Size: "Unica"
+      }
+    }
+ );
+
+ db.products.updateMany(
+    // query
+    {  category: "Alimento" },
+    // update - operators
+    {
+      $set: {
+        Warnings: "Consultar dieta del Animal"
+      }
+    }
+ );

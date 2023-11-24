@@ -1,0 +1,193 @@
+
+// products.mongodb
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+//Debe crear 20 productos de mascotas los cuales deben
+// tener los siguientes atributos: title, price, description, category, image
+
+db.products.insertMany([
+
+  {
+    _id: 1,
+    title: "Asuntol",
+    price: 1000,
+    description: "Elimina pulgas",
+    category: "Medicamento",
+    image: "src/images/asuntol.jpg"
+  },
+
+  {
+    _id: 2,
+    title: "Nex Gard",
+    price: 1500,
+    description: "Elimina pulgas y garrapatas",
+    category: "Medicamento",
+    image: "src/images/nexGard.jpg"
+  },
+
+  {
+    _id: 3,
+    title: "Repell Shield",
+    price: 3000,
+    description: "Spray para mascotas",
+    category: "Medicamento",
+    image: "src/images/Repell.jpg"
+  },
+
+  {
+    _id: 4,
+    title: "DentaLife",
+    price: 5000,
+    description: "Modedor para Perros",
+    category: "Alimento",
+    image: "src/images/denta.jpg"
+  },
+
+  {
+    _id: 5,
+    title: "Paños Petys",
+    price: 5000,
+    description: "Paños Petys 12 Unidades",
+    category: "Cuidado",
+    image: "src/images/pañosPet.jpg"
+  },
+
+  {
+    _id: 6,
+    title: "Credelio Gatos",
+    price: 7000,
+    description: "Medicamento para pulgas y garrapatas",
+    category: "Medicamento",
+    image: "src/images/cred.png"
+  },
+
+  {
+    _id: 7,
+    title: "Churus",
+    price: 8000,
+    description: "Crema alimento para gatos",
+    category: "Alimento",
+    image: "src/images/churu.jpg"
+  },
+
+  {
+    _id: 8,
+    title: "Juguete Mordedor",
+    price: 10000,
+    description: "Juguete mordedor para mascotas contra el agua",
+    category: "Juguete",
+    image: "src/images/morderdorT.jpg"
+  },
+
+  {
+    _id: 9,
+    title: "Collar Antiperdida",
+    price:35000,
+    description: "Collar Antiperdida para Gatos",
+    category: "Moda",
+    image: "src/images/collar1.jpg"
+  },
+
+  {
+    _id: 10,
+    title: "Shampoo Blanco",
+    price: 15000,
+    description: "Shampoo Blanco para perros",
+    category: "Cuidado",
+    image: "src/images/shampoo.jpg"
+  },
+
+  {
+    _id: 11,
+    title: "Alimento Cachorros Pedigree",
+    price: 6000,
+    description: "Alimento humedo para cachorros 85g",
+    category: "Alimento",
+    image: "src/images/alimentoHC.jpg",
+  },
+
+  {
+    _id: 12,
+    title: "Insecticida Canino",
+    price: 10000,
+    description: "Evita pestes en la piel de los caninos",
+    category: "Medicamento",
+    image: "src/images/insecticidaC.jpg"
+  },
+
+  {
+    _id: 13,
+    title: "Artri-Tabs",
+    price: 15000,
+    description: "Suplemento Nutricional",
+    category: "Medicamento",
+    image: "src/images/suplemento.jpg"
+  },
+
+  {
+    _id: 14,
+    title: "Comida Felix",
+    price: 5000,
+    description: "Comida Felix para Gatos enlatadas",
+    category: "Alimento",
+    image: "src/images/felix1.jpg"
+  },
+
+  {
+    _id: 15,
+    title: "Arnes para Perr Kulcan",
+    price: 15000,
+    description: "Arnes pechero para Perro",
+    category: "Moda",
+    image: "src/images/arnesP.jpg"
+  },
+
+  {
+    _id: 16,
+    title: "Chaleco para Perros Kulcan ",
+    price: 35000,
+    description: "Chaleco para Perro Grande",
+    category: "Moda",
+    image: "src/images/chaleco.jpg"
+  },
+
+  {
+    _id: 17,
+    title: "Alimento Chunky",
+    price: 25000,
+    description: "Alimento Chunky para perros 10kg", 
+    category: "Alimento",
+    image: "src/images/chunky.jpg"
+  },
+
+  {
+    _id: 18,
+    title: "Bebedero portatil",
+    price: 17000,
+    description: "Bebedero portatil para Mascotas",
+    category: "Cuidado",
+    image: "src/images/bebedero.jpg"
+  },
+
+  {
+    _id: 19,
+    title: "Guante Para Mascotas",
+    price: 10000,
+    description: "Guante Para Mascotas removedor de pelo",
+    category: "Cuidado",
+    image: "src/images/guante.jpg"
+  },
+
+  {
+    _id: 20,
+    title: "Espuma Baño Seco",
+    price: 5000,
+    description: "Espuma para perros baño seco",
+    category: "Cuidado",
+    image: "src/images/espuma.jpg"
+  }
+
+
+])
